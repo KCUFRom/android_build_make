@@ -1091,6 +1091,8 @@ dont_bother_goals := out \
 # Rules for QCOM targets
 include $(BUILD_SYSTEM)/qcom_target.mk
 
+$(eval include device/kcuf/sepolicy/common/sepolicy.mk)
+
 ifeq ($(CALLED_FROM_SETUP),true)
 include $(BUILD_SYSTEM)/ninja_config.mk
 include $(BUILD_SYSTEM)/soong_config.mk
